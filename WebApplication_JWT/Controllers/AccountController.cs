@@ -6071,7 +6071,7 @@ namespace WebApplication_JWT.Controllers
         [Route("CreateOrderRpay")]
         public IHttpActionResult CreateOrderRpay(AccountsModels.OrderRequestModel model)
         {
-            RazorpayClient razorpayClient = new RazorpayClient("rzp_live_84qcZWqWSlAuhk", "GAtoPwXXL4Vl9sihBKTKsTNX");
+            RazorpayClient razorpayClient = new RazorpayClient("", "");
             //RazorpayClient razorpayClient = new RazorpayClient("rzp_test_gpxhtt1nNUrPAX", "2lmlv3FPbN2IQOeh3cPqRXDU");
 
             Dictionary<string, object> data1 = new Dictionary<string, object>
@@ -6116,7 +6116,7 @@ namespace WebApplication_JWT.Controllers
         {
             try
             {
-                 RazorpayClient razorpayClient = new RazorpayClient("rzp_live_84qcZWqWSlAuhk", "GAtoPwXXL4Vl9sihBKTKsTNX");
+                 RazorpayClient razorpayClient = new RazorpayClient("", "");
               //  RazorpayClient razorpayClient = new RazorpayClient("rzp_test_gpxhtt1nNUrPAX", "2lmlv3FPbN2IQOeh3cPqRXDU");
 
                 Dictionary<string, string> attributes = new Dictionary<string, string>
